@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请从ABCD中选择一个："
+        android:textSize="16sp"/>
+    <RadioGroup
+        android:id="@+id/radiogroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radiobuttonA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A:125"/>
+        <RadioButton
+            android:id="@+id/radiobuttonB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B:100"/>
+        <RadioButton
+            android:id="@+id/radiobuttonC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C:105"/>
+        <RadioButton
+            android:id="@+id/radiobuttonD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D:135"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        />
+</LinearLayout>
