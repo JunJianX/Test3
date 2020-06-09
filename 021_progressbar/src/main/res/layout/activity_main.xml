@@ -16,5 +16,15 @@
         android:layout_marginBottom="50dp"
         android:layout_alignParentBottom="true"
         />
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="100dp"
+        android:max="10"
+        android:progress="5"
+        android:background="#0000"
+        android:thumb="@mipmap/h"/>
 
 </RelativeLayout>

@@ -9,6 +9,7 @@ import android.os.Message;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ProgressBar;
+import android.widget.SeekBar;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -63,5 +64,24 @@ public class MainActivity extends AppCompatActivity {
                 return mProgress;
             }
         }).start();
+
+        /*拖动条*/
+        SeekBar sb = (SeekBar)findViewById(R.id.seekbar);
+        sb.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                Toast.makeText(MainActivity.this,"进度改变"+progress,Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                Toast.makeText(MainActivity.this,"开始触摸",Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                Toast.makeText(MainActivity.this,"停止触摸",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
