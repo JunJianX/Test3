@@ -24,6 +24,7 @@
     <!--        第二种方法为按钮添加监听器-->
     <Button
         android:id="@+id/button2"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/button1"
